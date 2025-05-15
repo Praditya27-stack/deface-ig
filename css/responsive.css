@@ -1,0 +1,48 @@
+/* Responsive CSS */
+@media (max-width: 450px) {
+    .container {
+      padding: 0;
+    }
+    
+    .login-container {
+      width: 100%;
+    }
+    
+    .login-box, .signup-box {
+      border: none;
+      background-color: transparent;
+    }
+    
+    .app-links {
+      justify-content: center;
+    }
+    
+    .footer {
+      padding: var(--spacing-sm);
+    }
+    
+    .links {
+      font-size: 11px;
+    }
+  }
+  
+  @media (max-width: 875px) {
+    .footer .links {
+      justify-content: center;
+    }
+    
+    .links a {
+      margin: 0 var(--spacing-xs) var(--spacing-xs) 0;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .container {
+      justify-content: flex-start;
+      padding-top: var(--spacing-lg);
+    }
+    
+    .login-container {
+      margin-top: var(--spacing-lg);
+    }
+  }

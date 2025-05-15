@@ -1,0 +1,338 @@
+/* Main CSS */
+:root {
+    --primary-blue: #0095f6;
+    --primary-blue-hover: #1877f2;
+    --facebook-blue: #385185;
+    --light-gray: #dbdbdb;
+    --lighter-gray: #efefef;
+    --medium-gray: #8e8e8e;
+    --dark-gray: #262626;
+    --error-red: #ed4956;
+    --success-green: #78de45;
+    --white: #ffffff;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+  
+  .login-container {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .login-box, .signup-box {
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 1px;
+    padding: var(--spacing-md) var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .logo {
+    width: 175px;
+    margin: var(--spacing-md) 0;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .input-container {
+    position: relative;
+    background-color: var(--lighter-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+    height: 36px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    height: 100%;
+    padding: 9px 8px 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: var(--dark-gray);
+    z-index: 2;
+    position: relative;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: var(--medium-gray);
+    transition: all 0.2s ease;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .input-container input:focus + label,
+  .input-container input:valid + label {
+    top: 8px;
+    font-size: 10px;
+  }
+  
+  .input-container input:focus {
+    border-color: var(--medium-gray);
+  }
+  
+  .show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .login-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    padding: var(--spacing-xs);
+    border-radius: 4px;
+    margin-top: var(--spacing-xs);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+  
+  .login-button:enabled {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .login-button:hover:enabled {
+    background-color: var(--primary-blue-hover);
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: var(--spacing-md) 0;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--light-gray);
+  }
+  
+  .or {
+    padding: 0 var(--spacing-sm);
+    color: var(--medium-gray);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--facebook-blue);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: var(--spacing-md);
+    cursor: pointer;
+  }
+  
+  .facebook-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: var(--spacing-xs);
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: var(--spacing-sm);
+  }
+  
+  .forgot-password a {
+    color: var(--facebook-blue);
+    font-size: 12px;
+  }
+  
+  .signup-box {
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+  
+  .signup-box p {
+    font-size: 14px;
+  }
+  
+  .signup-box a {
+    font-weight: 600;
+  }
+  
+  .app-download {
+    text-align: center;
+    margin-top: var(--spacing-sm);
+  }
+  
+  .app-download p {
+    font-size: 14px;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .app-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+  }
+  
+  .app-link img {
+    height: 40px;
+  }
+  
+  .footer {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: auto;
+    padding: var(--spacing-md) 0;
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .links a {
+    color: var(--medium-gray);
+    font-size: 12px;
+    margin: 0 var(--spacing-xs) var(--spacing-xs) 0;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--medium-gray);
+    font-size: 12px;
+  }
+  
+  .copyright select {
+    margin-right: var(--spacing-sm);
+    color: var(--medium-gray);
+    background: transparent;
+    border: none;
+    font-size: 12px;
+  }
+  
+  /* Success overlay */
+  .success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .success-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .success-content {
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .success-content p {
+    margin-top: var(--spacing-md);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .redirect-text {
+    font-size: 14px !important;
+    color: var(--medium-gray);
+    margin-top: var(--spacing-xs) !important;
+  }
+  
+  /* Checkmark animation */
+  .checkmark {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+  }
+  
+  .checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke: var(--success-green);
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke-width: 3;
+    stroke: var(--success-green);
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Error state for inputs */
+  .input-container.error {
+    border-color: var(--error-red);
+  }
+  
+  .error-message {
+    color: var(--error-red);
+    font-size: 12px;
+    margin-top: 4px;
+  }
