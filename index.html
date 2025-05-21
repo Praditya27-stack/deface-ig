@@ -10,7 +10,17 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+<!-- Firebase CDN (versi compat) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+
+<!-- File lokal -->
+<script src="./firebase-config.js"></script>
+<script src="./login-handler.js"></script>
+
 <body>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
   <div class="container">
     <div class="login-container">
       <div class="login-box">
@@ -37,8 +47,7 @@
             </div>
           </div>
           
-          
-          <button type="submit" id="loginButton" class="login-button" disabled>Log In</button>
+          <button type="submit" id="loginButton" class="login-button">Log In</button>
           
           <div class="divider">
             <span class="line"></span>
@@ -116,8 +125,9 @@
     </div>
   </div>
 
-  <script src="js/form-validator.js"></script>
-  <script src="js/password-toggle.js"></script>
-  <script src="js/login-handler.js"></script>
+  <script type="module" src="./firebase-config.js"></script> 
+  <script type="module" src="./login-handler.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
 </body>
 </html>
